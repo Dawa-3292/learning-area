@@ -41,6 +41,19 @@
     ]
 
     // Add your code here
+    for(book of phonebook){
+      let names=book.value;
+      para.textContent="";
+      para.focus();
+      names=names.split(':');
+      if(names[0]===name){
+        para.textContent=`${names[0]:${names[1]}.}`
+        break;
+      }else{ 
+        para.textContent="";
+       }
+      
+    }
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
