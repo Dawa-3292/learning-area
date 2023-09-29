@@ -41,7 +41,18 @@
 
 
     // Add your code here
-
+let j=2
+while(i>=j){
+  if(isPrime(i)){
+    if(para.textContent!==''){
+      para.textContent+=', '
+    }
+    para.textContent+=`${i}`
+  }else{
+    continue;
+  }
+  i--;
+}
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
