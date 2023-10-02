@@ -30,6 +30,13 @@
     const para = document.createElement('p');
 
     // Add your code here
+    function chooseName(min,max){
+      min=Math.ceil(min)
+      max=Math.floor(max)
+      return Math.floor(Math.random()*(max-min))+min;
+    }
+    const randomIndex=chooseName(0,names.length);
+    para.textContent=names[randomIndex];
 
     // Don't edit the code below here!
 
